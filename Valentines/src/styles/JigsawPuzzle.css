@@ -1,0 +1,148 @@
+/* Jigsaw Puzzle Styles */
+.puzzle-wrapper {
+  display: flex;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 30px auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.puzzle-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.puzzle-slot {
+  background: white;
+  border: 2px dashed #ddd;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-height: 100px;
+  min-width: 100px;
+}
+
+.puzzle-slot:hover {
+  background: #f8f9ff;
+  border-color: #667eea;
+}
+
+.puzzle-slot-empty {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #bbb;
+  font-size: 24px;
+}
+
+.puzzle-piece-placed {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  background-repeat: no-repeat;
+}
+
+.available-pieces {
+  font-size: 14px;
+}
+
+.available-pieces h3 {
+  margin: 0 0 15px 0;
+  color: #666;
+  text-align: center;
+}
+
+.pieces-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 15px;
+  background: #f5f5f5;
+  border-radius: 10px;
+  min-width: 250px;
+  min-height: 100px;
+  border: 2px dashed #ccc;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.puzzle-piece {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #667eea;
+  border-radius: 5px;
+  cursor: grab;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  transition: all 0.2s;
+  background-repeat: no-repeat;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.puzzle-piece:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.puzzle-piece:active {
+  cursor: grabbing;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  background: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: #3367d6;
+}
+
+.reset-btn {
+  padding: 10px 20px;
+  background: #f8f9fa;
+  color: #5f6368;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.reset-btn:hover {
+  background: #f1f3f4;
+  border-color: #9aa0a6;
+}
+
+/* Override captcha-controls for this component */
+.captcha-container .captcha-controls {
+  display: flex !important;
+  gap: 10px;
+  justify-content: center;
+  flex-direction: row !important;
+  margin-top: 20px;
+}

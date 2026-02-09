@@ -1,0 +1,91 @@
+.cheesy-fact-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  animation: fadeInOverlay 0.3s ease-out;
+}
+
+@keyframes fadeInOverlay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cheesy-fact-container {
+  background: linear-gradient(135deg, #fff5f7 0%, #ffe4f0 100%);
+  border-radius: 20px;
+  padding: 40px 30px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(255, 20, 147, 0.4);
+  border: 2px solid #ff69b4;
+  animation: scaleUp 0.4s ease-out;
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.cheesy-fact-text {
+  font-size: 20px;
+  color: #c2185b;
+  margin: 0 0 30px 0;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+.cheesy-fact-btn {
+  background: linear-gradient(135deg, #ff69b4 0%, #ff1493 100%);
+  color: white;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 15px rgba(255, 20, 147, 0.4);
+}
+
+.cheesy-fact-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 20, 147, 0.6);
+}
+
+.cheesy-fact-btn:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+  .cheesy-fact-container {
+    padding: 30px 20px;
+    max-width: 90%;
+  }
+
+  .cheesy-fact-text {
+    font-size: 16px;
+  }
+
+  .cheesy-fact-btn {
+    padding: 12px 30px;
+    font-size: 14px;
+  }
+}
