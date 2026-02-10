@@ -30,6 +30,8 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 8px;
   margin: 0 0 10px 0;
+  width: 100%;
+  max-width: 330px;
 }
 
 .photo-item {
@@ -39,10 +41,8 @@
   border-radius: 4px;
   overflow: hidden;
   transition: all 0.2s ease;
-  aspect-ratio: 1 / 1;
   width: 100%;
-  max-width: 100px;
-  height: auto;
+  height: 100px;
 }
 
 .photo-item:hover {
