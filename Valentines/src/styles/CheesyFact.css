@@ -74,18 +74,41 @@
   transform: translateY(0);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .cheesy-fact-container {
-    padding: 30px 20px;
-    max-width: 90%;
+    padding: 30px 25px;
+    max-width: 95vw;
   }
 
   .cheesy-fact-text {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .cheesy-fact-btn {
     padding: 12px 30px;
     font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cheesy-fact-overlay {
+    padding: 10px;
+  }
+
+  .cheesy-fact-container {
+    padding: 25px 20px;
+    max-width: 100%;
+    border-radius: 15px;
+  }
+
+  .cheesy-fact-text {
+    font-size: 15px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+
+  .cheesy-fact-btn {
+    padding: 10px 24px;
+    font-size: 13px;
   }
 }

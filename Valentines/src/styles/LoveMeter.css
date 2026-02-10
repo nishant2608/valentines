@@ -89,15 +89,54 @@
   .love-meter-container {
     top: 10px;
     right: 10px;
-    min-width: 200px;
-    padding: 15px;
+    min-width: 180px;
+    padding: 8px;
+    z-index: 50;
   }
 
   .love-meter-container h3 {
-    font-size: 14px;
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .love-meter-bar {
+    height: 18px;
   }
 
   .love-meter-hearts {
-    font-size: 14px;
+    font-size: 12px;
+  }
+
+  .love-meter-text {
+    font-size: 10px;
+    margin-top: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .love-meter-container {
+    top: 10px;
+    right: 10px;
+    min-width: 150px;
+    padding: 6px;
+    z-index: 50;
+  }
+
+  .love-meter-container h3 {
+    font-size: 11px;
+    margin-bottom: 4px;
+  }
+
+  .love-meter-bar {
+    height: 16px;
+  }
+
+  .love-meter-hearts {
+    font-size: 10px;
+  }
+
+  .love-meter-text {
+    font-size: 9px;
+    margin-top: 3px;
   }
 }

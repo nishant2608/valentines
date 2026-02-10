@@ -122,3 +122,75 @@
     transform: translateY(-20px) scale(1.1);
   }
 }
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .riddle-card {
+    padding: 10px;
+    max-width: 95vw;
+    margin: 20px auto;
+  }
+
+  .riddle-question {
+    font-size: 20px;
+  }
+
+  .riddle-hint {
+    font-size: 14px;
+  }
+
+  .riddle-input {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .riddle-input-group .submit-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .riddle-card {
+    padding: 15px;
+    max-width: 100%;
+    margin: 15px auto;
+  }
+
+  .riddle-question {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .riddle-hint {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .riddle-input-group {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .riddle-input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .riddle-input-group .submit-btn {
+    padding: 10px 15px;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .attempts {
+    font-size: 12px;
+  }
+
+  .riddle-background .heart {
+    font-size: 30px;
+  }
+
+  .riddle-background .heart:nth-child(2) {
+    font-size: 40px;
+  }
+}
