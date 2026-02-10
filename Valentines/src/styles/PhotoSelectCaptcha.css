@@ -4,7 +4,7 @@
   border: 1px solid #d3d3d3;
   border-radius: 8px;
   padding: 12px;
-  max-width: 400px;
+  max-width: 350px;
   width: fit-content;
   height: fit-content;
   margin: 20px auto;
@@ -40,6 +40,9 @@
   overflow: hidden;
   transition: all 0.2s ease;
   aspect-ratio: 1 / 1;
+  width: 100%;
+  max-width: 100px;
+  height: auto;
 }
 
 .photo-item:hover {
